@@ -77,6 +77,29 @@ vector<int> twoSum(vector<int>& nums, int target) {
 
 > Runtime: 4 ms, faster than 99.96% of C++ online submissions for Two Sum.
 
+
+另附Java解法：
+```java
+    public int[] twoSum(int[] nums, int target) {
+        int[] res = new int[2];
+        HashMap<Integer,Integer> map = new HashMap<Integer, Integer>();
+        map.put(nums[0],0);
+        for (int i = 1;i < nums.length;++i) {
+           int number = target - nums[i];
+           if(map.containsKey(number)){
+               res[0] = map.get(number);
+               res[1] = i;
+               break;
+           }
+           else {
+               map.put(nums[i],i);
+           }
+        }
+        return res;
+    }
+
+```
+
 这题算是一个简单的开始吧，哈希的简单应用。
 
 希望自己以后也好好加油
