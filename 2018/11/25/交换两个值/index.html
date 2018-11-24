@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="It&#39;s not who you are underneath,it&#39;s what you do that defines you">
 <meta property="og:description" content="刚学编程的时候，老师就曾经在c语言课上教过大家交换两个数字的值 当时是利用了一个中间值的方法，代码如下所示 123456void swap (int &amp;amp;a ,int &amp;amp;b)&amp;#123;	int temp = a;		//中间值	a = b;	b = temp;&amp;#125; 这样便很轻松地交换了a和b的值 后来在找工作面试的时候，又遇到了一个问题如何不使用中间值交换两个数的值 这个问">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-24T19:32:09.009Z">
+<meta property="og:updated_time" content="2018-11-24T19:34:04.988Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="交换两个值">
 <meta name="twitter:description" content="刚学编程的时候，老师就曾经在c语言课上教过大家交换两个数字的值 当时是利用了一个中间值的方法，代码如下所示 123456void swap (int &amp;amp;a ,int &amp;amp;b)&amp;#123;	int temp = a;		//中间值	a = b;	b = temp;&amp;#125; 这样便很轻松地交换了a和b的值 后来在找工作面试的时候，又遇到了一个问题如何不使用中间值交换两个数的值 这个问">
@@ -297,7 +297,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-11-25T03:32:09+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-11-25T03:34:04+08:00">
                 2018-11-25
               </time>
             
@@ -352,7 +352,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  608
+                  603
                 </span>
               
 
@@ -425,10 +425,11 @@
 <blockquote>
 <p>我们令a = x,b = y</p>
 <p>根据C/C++语法，a ^= b ^= a ^= b这一行代码我们应该从右向左依次运算</p>
-<p>我们可以将其拆分为<br> <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt; 	a = a ^ b;</span><br><span class="line">&gt; 	b = b ^ a;</span><br><span class="line">&gt; 	a = a ^ b;</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<blockquote>
-<p>首先计算a = a ^ b  —&gt; a = x ^ y </p>
+<p>我们可以将其拆分为</p>
+<pre><code>a = a ^ b;
+b = b ^ a;
+a = a ^ b;
+</code></pre><p>首先计算a = a ^ b  —&gt; a = x ^ y </p>
 <p>然后计算b = b ^ a —&gt;  b = b ^ x ^ y  = y ^ x ^ y = y ^ y ^ x = x</p>
 <p>最后计算 a = a ^ b = x ^ y ^ x = y</p>
 </blockquote>
