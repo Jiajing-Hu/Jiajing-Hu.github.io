@@ -46,7 +46,9 @@ footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
   #since: 2015
+    
 
+  # visitor count 
   # Icon between year and copyright info.
   icon: user
 
@@ -223,7 +225,7 @@ auto_excerpt:
 post_meta:
   item_text: true
   created_at: true
-  updated_at: false
+  updated_at: true
   categories: true
 
 # Post wordcount display settings
@@ -551,16 +553,16 @@ busuanzi_count:
   # count values only if the other configs are false
   enable: true
   # custom uv span for the whole site
-  site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
+  site_uv: false
+  site_uv_header: visitor 
   site_uv_footer:
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
+  site_pv_header: 
   site_pv_footer:
   # custom pv span for one page only
   page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>
+  page_pv_header: visitor
   page_pv_footer:
 
 
@@ -811,3 +813,5 @@ images: images
 
 # Theme version
 version: 5.1.4
+
+counter: true
