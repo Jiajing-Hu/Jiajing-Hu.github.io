@@ -2,6 +2,7 @@
 title: leetcode 2. Add Two Numbers
 date: 2018-11-24 02:56:03
 tags: leetcode
+categories: leetcode
 ---
 
 废话少说，先看题目

@@ -2,6 +2,7 @@
 title: Leetcode 1. Two Sum
 date: 2018-11-23 14:43:04
 tags: leetcode
+categories: leetcode
 ---
 
 leetcode的第一题

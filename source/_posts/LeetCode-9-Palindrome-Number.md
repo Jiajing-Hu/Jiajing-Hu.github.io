@@ -2,7 +2,7 @@
 title: LeetCode 9. Palindrome Number
 date: 2018-11-26 08:41:02
 tags: leetcode
-categories: LeetCode
+categories: leetcode
 ---
 
 > Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
