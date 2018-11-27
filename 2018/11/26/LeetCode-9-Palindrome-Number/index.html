@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="leetcode,">
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="刚学编程的时候，老师就曾经在c语言课上教过大家交换两个数字的值 当时是利用了一个中间值的方法，代码如下所示 123456void swap (int &amp;amp;a ,int &amp;amp;b)&amp;#123;	int temp = a;		//中间值	a = b;	b = temp;&amp;#125; 这样便很轻松地交换了a和b的值 后来在找工作面试的时候，又遇到了一个问题如何不使用中间值交换两个数的值 这个问">
+<meta name="description" content="Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward. Example 1: Input: 121Output: trueExample 2: Input: -121Output: falseExplanation: F">
+<meta name="keywords" content="leetcode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="交换两个值">
-<meta property="og:url" content="http://zqhjj.top/2018/11/25/交换两个值/index.html">
+<meta property="og:title" content="LeetCode 9. Palindrome Number">
+<meta property="og:url" content="http://zqhjj.top/2018/11/26/LeetCode-9-Palindrome-Number/index.html">
 <meta property="og:site_name" content="It&#39;s not who you are underneath,it&#39;s what you do that defines you">
-<meta property="og:description" content="刚学编程的时候，老师就曾经在c语言课上教过大家交换两个数字的值 当时是利用了一个中间值的方法，代码如下所示 123456void swap (int &amp;amp;a ,int &amp;amp;b)&amp;#123;	int temp = a;		//中间值	a = b;	b = temp;&amp;#125; 这样便很轻松地交换了a和b的值 后来在找工作面试的时候，又遇到了一个问题如何不使用中间值交换两个数的值 这个问">
+<meta property="og:description" content="Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward. Example 1: Input: 121Output: trueExample 2: Input: -121Output: falseExplanation: F">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-24T19:34:04.988Z">
+<meta property="og:updated_time" content="2018-11-26T15:14:31.919Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="交换两个值">
-<meta name="twitter:description" content="刚学编程的时候，老师就曾经在c语言课上教过大家交换两个数字的值 当时是利用了一个中间值的方法，代码如下所示 123456void swap (int &amp;amp;a ,int &amp;amp;b)&amp;#123;	int temp = a;		//中间值	a = b;	b = temp;&amp;#125; 这样便很轻松地交换了a和b的值 后来在找工作面试的时候，又遇到了一个问题如何不使用中间值交换两个数的值 这个问">
+<meta name="twitter:title" content="LeetCode 9. Palindrome Number">
+<meta name="twitter:description" content="Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward. Example 1: Input: 121Output: trueExample 2: Input: -121Output: falseExplanation: F">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://zqhjj.top/2018/11/25/交换两个值/">
+  <link rel="canonical" href="http://zqhjj.top/2018/11/26/LeetCode-9-Palindrome-Number/">
 
 
 
 
 
-  <title>交换两个值 | It's not who you are underneath,it's what you do that defines you</title>
+  <title>LeetCode 9. Palindrome Number | It's not who you are underneath,it's what you do that defines you</title>
   
 
 
@@ -252,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zqhjj.top/2018/11/25/交换两个值/">
+    <link itemprop="mainEntityOfPage" href="http://zqhjj.top/2018/11/26/LeetCode-9-Palindrome-Number/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jimmy">
@@ -269,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">交换两个值</h1>
+          <h1 class="post-title" itemprop="name headline">LeetCode 9. Palindrome Number</h1>
         
 
         <div class="post-meta">
@@ -281,8 +282,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-25T03:00:04+08:00">
-                2018-11-25
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-26T08:41:02+08:00">
+                2018-11-26
               </time>
             
 
@@ -297,8 +298,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-11-25T03:34:04+08:00">
-                2018-11-25
+              <time title="Post modified" itemprop="dateModified" datetime="2018-11-26T23:14:31+08:00">
+                2018-11-26
               </time>
             
           </span>
@@ -316,8 +317,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/编程小技巧/" itemprop="url" rel="index">
-                    <span itemprop="name">编程小技巧</span>
+                  <a href="/categories/leetcode/" itemprop="url" rel="index">
+                    <span itemprop="name">leetcode</span>
                   </a>
                 </span>
 
@@ -352,7 +353,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  603
+                  223
                 </span>
               
 
@@ -368,7 +369,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  2
+                  1
                 </span>
               
             </div>
@@ -389,52 +390,21 @@
       
 
       
-        <p>刚学编程的时候，老师就曾经在c语言课上教过大家交换两个数字的值</p>
-<p>当时是利用了一个中间值的方法，代码如下所示</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span> <span class="params">(<span class="keyword">int</span> &amp;a ,<span class="keyword">int</span> &amp;b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> temp = a;		<span class="comment">//中间值</span></span><br><span class="line">	a = b;</span><br><span class="line">	b = temp;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这样便很轻松地交换了a和b的值</p>
-<p>后来在找工作面试的时候，又遇到了一个问题<em>如何不使用中间值交换两个数的值</em></p>
-<p>这个问题比之前的问题稍微增加了一点难度，要求不能使用中间值，不过难度也并不高。</p>
-<p>我们可以利用数学的原理来交换两个值。</p>
-<blockquote>
-<p>假设 a = x, b = y</p>
-<p>那么我们可以令 a = a + b = x + y</p>
-<p>然后令 b = a - b = x + y - y = x</p>
-<p>最后令 a = a - b = x + y - x = y</p>
-<p>那么经过这些操作得到的结果为 a = y ,b = x</p>
+        <blockquote>
+<p>Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.</p>
+<p>Example 1:</p>
+<p>Input: 121<br>Output: true<br>Example 2:</p>
+<p>Input: -121<br>Output: false<br>Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.<br>Example 3:</p>
+<p>Input: 10<br>Output: false<br>Explanation: Reads 01 from right to left. Therefore it is not a palindrome.<br>Follow up:</p>
+<p>Coud you solve it without converting the integer to a string?</p>
 </blockquote>
-<p>代码如下<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span> <span class="params">(<span class="keyword">int</span> &amp;a,<span class="keyword">int</span> &amp;b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	a = a + b;</span><br><span class="line">	b = a - b;</span><br><span class="line">	a = a - b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>那么，这个是否还有其他的方法，更简洁的方法交换两个数字的值呢？</p>
-<p>答案是有的。</p>
-<p>先看代码</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">swap</span> <span class="params">(<span class="keyword">int</span> &amp;a,<span class="keyword">int</span> &amp;b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	a ^= b ^= a ^= b;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这样一行代码就可以交换两个数字的值了，十分简洁和申请</p>
-<p>这里的思路是利用了异或运算</p>
-<blockquote>
-<p>异或<br>异或也叫半加运算，其运算法则相当于不带进位的二进制加法：二进制下用1表示真，0表示假，则异或的运算法则为：0⊕0=0，1⊕0=1，0⊕1=1，1⊕1=0（同为0，异为1）</p>
-</blockquote>
-<p>对于异或运算是满足交换律的，也就是说</p>
-<blockquote>
-<p>a ^ b ^ c = a ^ c ^ b</p>
-</blockquote>
-<p>同时，一个数异或零等于本身，一个数异或本身等于0</p>
-<blockquote>
-<p>a ^ a = 0<br>a ^ 0 = a</p>
-</blockquote>
-<p>这种交换两个数字的方法正式利用了异或运算的交换律</p>
-<blockquote>
-<p>我们令a = x,b = y</p>
-<p>根据C/C++语法，a ^= b ^= a ^= b这一行代码我们应该从右向左依次运算</p>
-<p>我们可以将其拆分为</p>
-<pre><code>a = a ^ b;
-b = b ^ a;
-a = a ^ b;
-</code></pre><p>首先计算a = a ^ b  —&gt; a = x ^ y </p>
-<p>然后计算b = b ^ a —&gt;  b = b ^ x ^ y  = y ^ x ^ y = y ^ y ^ x = x</p>
-<p>最后计算 a = a ^ b = x ^ y ^ x = y</p>
-</blockquote>
-<p>这样便达到了交换a，b的作用</p>
-<p>仅仅使用了一行代码，还是十分简洁的</p>
+<p>题目要求判断是否回文，并且不能将数字转换为string</p>
+<p>很简单直接贴代码</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isPalindrome</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (x &lt; <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">int</span> palindrome = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> temp = x;</span><br><span class="line">    <span class="keyword">while</span>(temp)</span><br><span class="line">    &#123;</span><br><span class="line">        palindrome = palindrome * <span class="number">10</span> + temp % <span class="number">10</span>;</span><br><span class="line">        temp /= <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> palindrome == x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>另外，其实转换为string的代码将会更加简洁（虽然题目不让使用）</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isPalindrome</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">string</span> str = to_string(x);</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">string</span>(str.begin(),str.end()) == <span class="built_in">string</span>(str.rbegin(),str.rend());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Java代码：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isPalindrome</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x &lt; <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    <span class="keyword">int</span> palindrome = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> temp = x;</span><br><span class="line">    <span class="keyword">while</span> (temp != <span class="number">0</span>) &#123;</span><br><span class="line">        palindrome = palindrome * <span class="number">10</span> + temp % <span class="number">10</span>;</span><br><span class="line">        temp /= <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> palindrome == x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -455,7 +425,7 @@ a = a ^ b;
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://zqhjj.top/2018/11/25/交换两个值/" title="交换两个值">http://zqhjj.top/2018/11/25/交换两个值/</a>
+    <a href="http://zqhjj.top/2018/11/26/LeetCode-9-Palindrome-Number/" title="LeetCode 9. Palindrome Number">http://zqhjj.top/2018/11/26/LeetCode-9-Palindrome-Number/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -468,6 +438,12 @@ a = a ^ b;
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
+          
+        </div>
+      
 
       
       
@@ -477,8 +453,8 @@ a = a ^ b;
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/24/LeetCode-7-Reverse-Integer/" rel="next" title="LeetCode 7. Reverse Integer">
-                <i class="fa fa-chevron-left"></i> LeetCode 7. Reverse Integer
+              <a href="/2018/11/25/交换两个值/" rel="next" title="交换两个值">
+                <i class="fa fa-chevron-left"></i> 交换两个值
               </a>
             
           </div>
@@ -487,8 +463,8 @@ a = a ^ b;
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/11/26/LeetCode-9-Palindrome-Number/" rel="prev" title="LeetCode 9. Palindrome Number">
-                LeetCode 9. Palindrome Number <i class="fa fa-chevron-right"></i>
+              <a href="/2018/11/26/redis源码阅读-zmalloc/" rel="prev" title="redis源码阅读 - zmalloc">
+                redis源码阅读 - zmalloc <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
