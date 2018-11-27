@@ -53,7 +53,7 @@ vector<int> twoSum(vector<int>& nums, int target) {
 > map底层是红黑树，查询时间复杂度O(lgn)，unordered_map底层是哈希，查询时间复杂度为O(n)
 
 
-代码如下
+### C++代码
 ```c
 vector<int> twoSum(vector<int>& nums, int target) {
     unordered_map <int,int> mp;         //使用哈希
@@ -79,7 +79,7 @@ vector<int> twoSum(vector<int>& nums, int target) {
 > Runtime: 4 ms, faster than 99.96% of C++ online submissions for Two Sum.
 
 
-另附Java解法：
+### Java解法：
 ```java
     public int[] twoSum(int[] nums, int target) {
         int[] res = new int[2];
@@ -101,6 +101,20 @@ vector<int> twoSum(vector<int>& nums, int target) {
 
 ```
 
+### python解法:
+
+```python
+
+class Solution(object):
+
+    def twoSum(self, nums, target):
+        map = {}
+        for i in range(len(nums)):
+            if target - nums[i] in map:  # 在内部
+                return [map[target - nums[i]], i]
+            else:
+                map[nums[i]] = i
+```
 这题算是一个简单的开始吧，哈希的简单应用。
 
 希望自己以后也好好加油
