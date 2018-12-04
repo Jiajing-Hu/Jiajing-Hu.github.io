@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="leetcode,">
+  <meta name="keywords" content="C/C++,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward. Example 1: Input: 121Output: trueExample 2: Input: -121Output: falseExplanation: F">
-<meta name="keywords" content="leetcode">
+<meta name="description" content="内联函数与宏,这两者通常能够实现类似的功能,也在面试中经常放在一起比较.所以这里简单说一说内联函数和宏的区别 内联函数在C/C++中,一般函数的储存是储存函数的地址.当我们调用一个函数的时候,将会跳转到相应的地址,并且在函数调用结束后返回.在执行函数的调用时,程序先储存函数的地址,然后讲函数的参数复制到栈中,执行函数的代码,最后返回调用函数除的地址. 简单地来说,在一般的函数调用的时候.内存存在两">
+<meta name="keywords" content="C&#x2F;C++">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode 9. Palindrome Number">
-<meta property="og:url" content="http://zqhjj.top/2018/11/26/LeetCode-9-Palindrome-Number/index.html">
+<meta property="og:title" content="内联函数与宏">
+<meta property="og:url" content="http://zqhjj.top/2018/11/29/内联函数与宏/index.html">
 <meta property="og:site_name" content="It&#39;s not who you are underneath,it&#39;s what you do that defines you">
-<meta property="og:description" content="Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward. Example 1: Input: 121Output: trueExample 2: Input: -121Output: falseExplanation: F">
+<meta property="og:description" content="内联函数与宏,这两者通常能够实现类似的功能,也在面试中经常放在一起比较.所以这里简单说一说内联函数和宏的区别 内联函数在C/C++中,一般函数的储存是储存函数的地址.当我们调用一个函数的时候,将会跳转到相应的地址,并且在函数调用结束后返回.在执行函数的调用时,程序先储存函数的地址,然后讲函数的参数复制到栈中,执行函数的代码,最后返回调用函数除的地址. 简单地来说,在一般的函数调用的时候.内存存在两">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-26T15:14:31.919Z">
+<meta property="og:updated_time" content="2018-12-04T16:14:31.756Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LeetCode 9. Palindrome Number">
-<meta name="twitter:description" content="Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward. Example 1: Input: 121Output: trueExample 2: Input: -121Output: falseExplanation: F">
+<meta name="twitter:title" content="内联函数与宏">
+<meta name="twitter:description" content="内联函数与宏,这两者通常能够实现类似的功能,也在面试中经常放在一起比较.所以这里简单说一说内联函数和宏的区别 内联函数在C/C++中,一般函数的储存是储存函数的地址.当我们调用一个函数的时候,将会跳转到相应的地址,并且在函数调用结束后返回.在执行函数的调用时,程序先储存函数的地址,然后讲函数的参数复制到栈中,执行函数的代码,最后返回调用函数除的地址. 简单地来说,在一般的函数调用的时候.内存存在两">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://zqhjj.top/2018/11/26/LeetCode-9-Palindrome-Number/">
+  <link rel="canonical" href="http://zqhjj.top/2018/11/29/内联函数与宏/">
 
 
 
 
 
-  <title>LeetCode 9. Palindrome Number | It's not who you are underneath,it's what you do that defines you</title>
+  <title>内联函数与宏 | It's not who you are underneath,it's what you do that defines you</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zqhjj.top/2018/11/26/LeetCode-9-Palindrome-Number/">
+    <link itemprop="mainEntityOfPage" href="http://zqhjj.top/2018/11/29/内联函数与宏/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jimmy">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">LeetCode 9. Palindrome Number</h1>
+          <h1 class="post-title" itemprop="name headline">内联函数与宏</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-26T08:41:02+08:00">
-                2018-11-26
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-29T20:00:11+08:00">
+                2018-11-29
               </time>
             
 
@@ -298,34 +298,12 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-11-26T23:14:31+08:00">
-                2018-11-26
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-05T00:14:31+08:00">
+                2018-12-05
               </time>
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/leetcode/" itemprop="url" rel="index">
-                    <span itemprop="name">leetcode</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -353,7 +331,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  223
+                  887
                 </span>
               
 
@@ -369,7 +347,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  1
+                  3
                 </span>
               
             </div>
@@ -390,21 +368,40 @@
       
 
       
-        <blockquote>
-<p>Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.</p>
-<p>Example 1:</p>
-<p>Input: 121<br>Output: true<br>Example 2:</p>
-<p>Input: -121<br>Output: false<br>Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.<br>Example 3:</p>
-<p>Input: 10<br>Output: false<br>Explanation: Reads 01 from right to left. Therefore it is not a palindrome.<br>Follow up:</p>
-<p>Coud you solve it without converting the integer to a string?</p>
+        <p>内联函数与宏,这两者通常能够实现类似的功能,也在面试中经常放在一起比较.所以这里简单说一说内联函数和宏的区别</p>
+<h3 id="内联函数"><a href="#内联函数" class="headerlink" title="内联函数"></a>内联函数</h3><p>在C/C++中,一般函数的储存是储存函数的地址.当我们调用一个函数的时候,将会跳转到相应的地址,并且在函数调用结束后返回.在执行函数的调用时,程序先储存函数的地址,然后讲函数的参数复制到栈中,执行函数的代码,最后返回调用函数除的地址.</p>
+<p>简单地来说,在一般的函数调用的时候.内存存在两次跳转,第一次从调用点跳转到函数地址,然后在函数返回时跳回调用点.这里的来回跳转对于机器来说是需要一定的开销的,另外函数在调用的过程中使用的是函数栈,但是函数栈的大小是有限的,如果在某个时候大量的进行函数调用或者函数的递归调用,有可能导致栈空间不足使程序出错.</p>
+<p>对于一些经常调用的<strong>小型</strong>函数,如果经常反复跳转的话,程序的性能将会被拖慢.所以内联函数就应运而生了.</p>
+<blockquote>
+<p>在计算机科学中，内联函数（有时称作在线函数或编译时期展开函数）是一种编程语言结构，用来建议编译器对一些特殊函数进行内联扩展（有时称作在线扩展）；也就是说建议编译器将指定的函数体插入并取代每一处调用该函数的地方（上下文），从而节省了每次调用函数带来的额外时间开支。</p>
 </blockquote>
-<p>题目要求判断是否回文，并且不能将数字转换为string</p>
-<p>很简单直接贴代码</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isPalindrome</span><span class="params">(<span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (x &lt; <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    <span class="keyword">int</span> palindrome = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> temp = x;</span><br><span class="line">    <span class="keyword">while</span>(temp)</span><br><span class="line">    &#123;</span><br><span class="line">        palindrome = palindrome * <span class="number">10</span> + temp % <span class="number">10</span>;</span><br><span class="line">        temp /= <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> palindrome == x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>另外，其实转换为string的代码将会更加简洁（虽然题目不让使用）</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">isPalindrome</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">string</span> str = to_string(x);</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">string</span>(str.begin(),str.end()) == <span class="built_in">string</span>(str.rbegin(),str.rend());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Java代码：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isPalindrome</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x &lt; <span class="number">0</span>)</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    <span class="keyword">int</span> palindrome = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> temp = x;</span><br><span class="line">    <span class="keyword">while</span> (temp != <span class="number">0</span>) &#123;</span><br><span class="line">        palindrome = palindrome * <span class="number">10</span> + temp % <span class="number">10</span>;</span><br><span class="line">        temp /= <span class="number">10</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> palindrome == x;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>也就是说,内联函数实在函数的原地展开,并不会设计到内存的跳转问题.这样的好处是在函数调用的时候避免了跳转带来的时间开销.但是这样牺牲了一些内存.所以我们一般规定内联函数中不允许出现循环</p>
+<h3 id="宏"><a href="#宏" class="headerlink" title="宏"></a>宏</h3><p>宏有时候也叫宏函数,但是<strong>宏不是函数</strong>,它只是简单的<strong>文本替换</strong></p>
+<p>举一个十分简单的例子</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta"># <span class="meta-keyword">define</span> F(x) x * x</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; F(<span class="number">5</span>) &lt;&lt; <span class="built_in">endl</span>; ---①</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; F(<span class="number">5</span> + <span class="number">5</span>) &lt;&lt; <span class="built_in">endl</span>; ---②</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在这个程序中,①处的输出应该是5,但是②处的输出却不是100,而是35</p>
+<p>因为F(5 + 5) = 5 + 5 * 5 + 5 = 35   –<strong>宏只是文本的替换</strong></p>
+<p>所以在使用宏函数的时候一定要注意好括号的问题</p>
+<h3 id="宏和内联函数的区别"><a href="#宏和内联函数的区别" class="headerlink" title="宏和内联函数的区别"></a>宏和内联函数的区别</h3><ol>
+<li><p>内联函数是一个<strong>函数</strong>,但是宏只是简单的文本替换</p>
+</li>
+<li><p>内联函数在编译期展开,但是宏是预处理命令,所以在预编译期展开</p>
+</li>
+<li><p>内联函数支持类型检查,但是宏不支持</p>
+</li>
+<li><p>内联函数有返回值,宏没有返回值</p>
+</li>
+<li><p>内联函数将会造成程序体积的增加,但是宏不会</p>
+</li>
+</ol>
+<h3 id="一些补充"><a href="#一些补充" class="headerlink" title="一些补充"></a>一些补充</h3><ol>
+<li><p>宏还有其他的很多功能,作为函数只是其中的一个小功能,这里讨论的宏只是函数形式的宏</p>
+</li>
+<li><p>inline只是一个<strong>建议</strong>,但是编译器可以拒绝.也就是inline开头的不一定都是内联函数</p>
+</li>
+<li><p>在class中的函数都是内联函数</p>
+</li>
+</ol>
 
       
     </div>
@@ -425,7 +422,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://zqhjj.top/2018/11/26/LeetCode-9-Palindrome-Number/" title="LeetCode 9. Palindrome Number">http://zqhjj.top/2018/11/26/LeetCode-9-Palindrome-Number/</a>
+    <a href="http://zqhjj.top/2018/11/29/内联函数与宏/" title="内联函数与宏">http://zqhjj.top/2018/11/29/内联函数与宏/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -440,7 +437,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
+            <a href="/tags/C-C/" rel="tag"># C/C++</a>
           
         </div>
       
@@ -453,8 +450,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/25/交换两个值/" rel="next" title="交换两个值">
-                <i class="fa fa-chevron-left"></i> 交换两个值
+              <a href="/2018/11/29/LeetCode-15-3Sum/" rel="next" title="LeetCode 15. 3Sum">
+                <i class="fa fa-chevron-left"></i> LeetCode 15. 3Sum
               </a>
             
           </div>
@@ -463,8 +460,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/11/26/redis源码阅读-zmalloc/" rel="prev" title="redis源码阅读 - zmalloc">
-                redis源码阅读 - zmalloc <i class="fa fa-chevron-right"></i>
+              <a href="/2018/12/04/redis源码阅读-sds/" rel="prev" title="redis源码阅读-sds">
+                redis源码阅读-sds <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -517,8 +514,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -580,6 +586,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#内联函数"><span class="nav-number">1.</span> <span class="nav-text">内联函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宏"><span class="nav-number">2.</span> <span class="nav-text">宏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宏和内联函数的区别"><span class="nav-number">3.</span> <span class="nav-text">宏和内联函数的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一些补充"><span class="nav-number">4.</span> <span class="nav-text">一些补充</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
