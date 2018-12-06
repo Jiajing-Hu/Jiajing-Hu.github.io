@@ -115,6 +115,24 @@ class Solution(object):
             else:
                 map[nums[i]] = i
 ```
+
+### Golang解法
+```go
+func twoSum(nums []int, target int) []int {
+	res := make([]int,2,2)
+	dict := make(map[int]int)		// map
+	for i,_ := range nums{
+		_,ok := dict[target - nums[i]]
+		if(ok){
+			res[0] = dict[target - nums[i]]
+			res[1] = i
+			break
+		}
+		dict[nums[i]] = i
+	}
+	return res
+}
+```
 这题算是一个简单的开始吧，哈希的简单应用。
 
 希望自己以后也好好加油
