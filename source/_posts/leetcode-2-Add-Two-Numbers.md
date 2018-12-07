@@ -34,6 +34,7 @@ categories: leetcode
 
 总体思路十分简单，下面是C++源码：
 
+### C++代码
 ```c++
  public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode res = new ListNode(0);
@@ -52,7 +53,7 @@ categories: leetcode
 ```
 
 
-另附Java解法：
+### Java解法：
 ```java
  public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode res = new ListNode(0);
@@ -68,4 +69,48 @@ categories: leetcode
         }
         return res.next;
     }
+```
+
+### python解法
+```python3
+   class Solution:
+    def addTwoNumbers(self, l1, l2):
+        head = ListNode(0)
+        cur = head
+        carry = 0
+        while l1 or l2 or carry:
+            val1 = l1.val if l1 else 0
+            val2 = l2.val if l2 else 0
+            carry, val = divmod(val1 + val2 + carry, 10)
+            cur.next = ListNode(val)
+            l1 = l1.next if l1 else None
+            l2 = l2.next if l2 else None
+            cur = cur.next
+        return head.next 
+```
+
+### Golang 
+```golang
+func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+	carry := 0
+	head := new(ListNode)
+	cur := head
+	for l1 != nil || l2 != nil || carry != 0 {
+		var val1, val2 int
+		if (l1 != nil) {
+			val1, l1 = l1.Val, l1.Next
+		} else {
+			val1 = 0
+		}
+		if (l2 != nil) {
+			val2, l2 = l2.Val, l2.Next
+		} else {
+			val2 = 0
+		}
+		cur.Next = &ListNode{(val1 + val2 + carry) % 10, nil}
+		carry = (val1 + val2 + carry) / 10
+		cur = cur.Next
+	}
+	return head.Next
+}
 ```
