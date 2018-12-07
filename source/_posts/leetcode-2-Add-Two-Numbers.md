@@ -72,7 +72,7 @@ categories: leetcode
 ```
 
 ### python解法
-```python3
+```python
    class Solution:
     def addTwoNumbers(self, l1, l2):
         head = ListNode(0)
