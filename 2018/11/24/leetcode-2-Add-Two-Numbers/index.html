@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="It&#39;s not who you are underneath,it&#39;s what you do that defines you">
 <meta property="og:description" content="废话少说，先看题目  You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers a">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-26T15:14:31.919Z">
+<meta property="og:updated_time" content="2018-12-09T13:22:42.226Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="leetcode 2. Add Two Numbers">
 <meta name="twitter:description" content="废话少说，先看题目  You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers a">
@@ -298,8 +298,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-11-26T23:14:31+08:00">
-                2018-11-26
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-09T21:22:42+08:00">
+                2018-12-09
               </time>
             
           </span>
@@ -353,7 +353,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  504
+                  655
                 </span>
               
 
@@ -369,7 +369,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  2
+                  3
                 </span>
               
             </div>
@@ -407,8 +407,10 @@
 <p>链表的相加其实就是类似于归并，跟归并排序的思想还是十分类似的。</p>
 <p>我们以此对每一位进行想加和保存，同时需要注意进位，也就是要额外定义一个carry值来记录是否存在进位。</p>
 <p>总体思路十分简单，下面是C++源码：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> ListNode <span class="title">addTwoNumbers</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">       ListNode res = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">       ListNode l = res;</span><br><span class="line">       <span class="keyword">int</span> carry = <span class="number">0</span>;</span><br><span class="line">       <span class="keyword">while</span> (l1 != null || l2 != null || carry != <span class="number">0</span>) &#123;</span><br><span class="line">           <span class="keyword">int</span> cur = (l1 != null ? l1.val : <span class="number">0</span>) + (l2 != null ? l2.val : <span class="number">0</span>) + carry;</span><br><span class="line">           carry = cur / <span class="number">10</span>;</span><br><span class="line">           l.next = <span class="keyword">new</span> ListNode(cur % <span class="number">10</span>);</span><br><span class="line">           l = l.next;</span><br><span class="line">           l1 = (l1 != null) ? l1.next : l1;</span><br><span class="line">           l2 = (l2 != null) ? l2.next : l2;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> res.next;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>另附Java解法：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> ListNode <span class="title">addTwoNumbers</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">       ListNode res = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">       ListNode l = res;</span><br><span class="line">       <span class="keyword">int</span> carry = <span class="number">0</span>;</span><br><span class="line">       <span class="keyword">while</span> (l1 != <span class="keyword">null</span> || l2 != <span class="keyword">null</span> || carry != <span class="number">0</span>) &#123;</span><br><span class="line">           <span class="keyword">int</span> cur = (l1 != <span class="keyword">null</span> ? l1.val : <span class="number">0</span>) + (l2 != <span class="keyword">null</span> ? l2.val : <span class="number">0</span>) + carry;</span><br><span class="line">           carry = cur / <span class="number">10</span>;</span><br><span class="line">           l.next = <span class="keyword">new</span> ListNode(cur % <span class="number">10</span>);</span><br><span class="line">           l = l.next;</span><br><span class="line">           l1 = (l1 != <span class="keyword">null</span>) ? l1.next : l1;</span><br><span class="line">           l2 = (l2 != <span class="keyword">null</span>) ? l2.next : l2;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> res.next;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="C-代码"><a href="#C-代码" class="headerlink" title="C++代码"></a>C++代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> ListNode <span class="title">addTwoNumbers</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">       ListNode res = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">       ListNode l = res;</span><br><span class="line">       <span class="keyword">int</span> carry = <span class="number">0</span>;</span><br><span class="line">       <span class="keyword">while</span> (l1 != null || l2 != null || carry != <span class="number">0</span>) &#123;</span><br><span class="line">           <span class="keyword">int</span> cur = (l1 != null ? l1.val : <span class="number">0</span>) + (l2 != null ? l2.val : <span class="number">0</span>) + carry;</span><br><span class="line">           carry = cur / <span class="number">10</span>;</span><br><span class="line">           l.next = <span class="keyword">new</span> ListNode(cur % <span class="number">10</span>);</span><br><span class="line">           l = l.next;</span><br><span class="line">           l1 = (l1 != null) ? l1.next : l1;</span><br><span class="line">           l2 = (l2 != null) ? l2.next : l2;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> res.next;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Java解法："><a href="#Java解法：" class="headerlink" title="Java解法："></a>Java解法：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> ListNode <span class="title">addTwoNumbers</span><span class="params">(ListNode l1, ListNode l2)</span> </span>&#123;</span><br><span class="line">       ListNode res = <span class="keyword">new</span> ListNode(<span class="number">0</span>);</span><br><span class="line">       ListNode l = res;</span><br><span class="line">       <span class="keyword">int</span> carry = <span class="number">0</span>;</span><br><span class="line">       <span class="keyword">while</span> (l1 != <span class="keyword">null</span> || l2 != <span class="keyword">null</span> || carry != <span class="number">0</span>) &#123;</span><br><span class="line">           <span class="keyword">int</span> cur = (l1 != <span class="keyword">null</span> ? l1.val : <span class="number">0</span>) + (l2 != <span class="keyword">null</span> ? l2.val : <span class="number">0</span>) + carry;</span><br><span class="line">           carry = cur / <span class="number">10</span>;</span><br><span class="line">           l.next = <span class="keyword">new</span> ListNode(cur % <span class="number">10</span>);</span><br><span class="line">           l = l.next;</span><br><span class="line">           l1 = (l1 != <span class="keyword">null</span>) ? l1.next : l1;</span><br><span class="line">           l2 = (l2 != <span class="keyword">null</span>) ? l2.next : l2;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">return</span> res.next;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<h3 id="python解法"><a href="#python解法" class="headerlink" title="python解法"></a>python解法</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line"> <span class="function"><span class="keyword">def</span> <span class="title">addTwoNumbers</span><span class="params">(self, l1, l2)</span>:</span></span><br><span class="line">     head = ListNode(<span class="number">0</span>)</span><br><span class="line">     cur = head</span><br><span class="line">     carry = <span class="number">0</span></span><br><span class="line">     <span class="keyword">while</span> l1 <span class="keyword">or</span> l2 <span class="keyword">or</span> carry:</span><br><span class="line">         val1 = l1.val <span class="keyword">if</span> l1 <span class="keyword">else</span> <span class="number">0</span></span><br><span class="line">         val2 = l2.val <span class="keyword">if</span> l2 <span class="keyword">else</span> <span class="number">0</span></span><br><span class="line">         carry, val = divmod(val1 + val2 + carry, <span class="number">10</span>)</span><br><span class="line">         cur.next = ListNode(val)</span><br><span class="line">         l1 = l1.next <span class="keyword">if</span> l1 <span class="keyword">else</span> <span class="keyword">None</span></span><br><span class="line">         l2 = l2.next <span class="keyword">if</span> l2 <span class="keyword">else</span> <span class="keyword">None</span></span><br><span class="line">         cur = cur.next</span><br><span class="line">     <span class="keyword">return</span> head.next</span><br></pre></td></tr></table></figure>
+<h3 id="Golang"><a href="#Golang" class="headerlink" title="Golang"></a>Golang</h3><figure class="highlight golang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">addTwoNumbers</span><span class="params">(l1 *ListNode, l2 *ListNode)</span> *<span class="title">ListNode</span></span> &#123;</span><br><span class="line">	carry := <span class="number">0</span></span><br><span class="line">	head := <span class="built_in">new</span>(ListNode)</span><br><span class="line">	cur := head</span><br><span class="line">	<span class="keyword">for</span> l1 != <span class="literal">nil</span> || l2 != <span class="literal">nil</span> || carry != <span class="number">0</span> &#123;</span><br><span class="line">		<span class="keyword">var</span> val1, val2 <span class="keyword">int</span></span><br><span class="line">		<span class="keyword">if</span> (l1 != <span class="literal">nil</span>) &#123;</span><br><span class="line">			val1, l1 = l1.Val, l1.Next</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			val1 = <span class="number">0</span></span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (l2 != <span class="literal">nil</span>) &#123;</span><br><span class="line">			val2, l2 = l2.Val, l2.Next</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			val2 = <span class="number">0</span></span><br><span class="line">		&#125;</span><br><span class="line">		cur.Next = &amp;ListNode&#123;(val1 + val2 + carry) % <span class="number">10</span>, <span class="literal">nil</span>&#125;</span><br><span class="line">		carry = (val1 + val2 + carry) / <span class="number">10</span></span><br><span class="line">		cur = cur.Next</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> head.Next</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -521,8 +523,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -539,7 +550,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -550,7 +561,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -561,7 +572,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -585,6 +596,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#C-代码"><span class="nav-number">1.</span> <span class="nav-text">C++代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java解法："><span class="nav-number">2.</span> <span class="nav-text">Java解法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#python解法"><span class="nav-number">3.</span> <span class="nav-text">python解法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Golang"><span class="nav-number">4.</span> <span class="nav-text">Golang</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -598,7 +625,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -612,7 +639,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">8.3k</span>
+    <span title="Site words total count">10.9k</span>
   
 </div>
 

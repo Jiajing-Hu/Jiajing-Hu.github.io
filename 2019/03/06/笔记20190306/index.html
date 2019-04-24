@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="C++,">
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="作为一个知识分子，我是不会出手打人的">
-<meta property="og:type" content="website">
-<meta property="og:title" content="It&#39;s not who you are underneath,it&#39;s what you do that defines you">
-<meta property="og:url" content="http://zqhjj.top/archives/index.html">
+<meta name="description" content="对静态成员的不正确描述是（）？   A. 静态数据成员要在类外定义和初始化 B. 非静态成员函数也可以操作静态数据成员 C. 静态成员不属于对象，是类的共享成员 D. 调用静态成员函数时要通过类或对象激活，所以静态成员函数拥有this指针  对于Ａ，类中静态成员都属于整个类共享，不属于某一个对象，必须在类内生声明，类外初始化。因为静态成员属于整个类，而不属于某个对象，如果在类内初始化，会导致每个">
+<meta name="keywords" content="C++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="笔记20190306">
+<meta property="og:url" content="http://zqhjj.top/2019/03/06/笔记20190306/index.html">
 <meta property="og:site_name" content="It&#39;s not who you are underneath,it&#39;s what you do that defines you">
-<meta property="og:description" content="作为一个知识分子，我是不会出手打人的">
+<meta property="og:description" content="对静态成员的不正确描述是（）？   A. 静态数据成员要在类外定义和初始化 B. 非静态成员函数也可以操作静态数据成员 C. 静态成员不属于对象，是类的共享成员 D. 调用静态成员函数时要通过类或对象激活，所以静态成员函数拥有this指针  对于Ａ，类中静态成员都属于整个类共享，不属于某一个对象，必须在类内生声明，类外初始化。因为静态成员属于整个类，而不属于某个对象，如果在类内初始化，会导致每个">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-06T16:30:11.838Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="It&#39;s not who you are underneath,it&#39;s what you do that defines you">
-<meta name="twitter:description" content="作为一个知识分子，我是不会出手打人的">
+<meta name="twitter:title" content="笔记20190306">
+<meta name="twitter:description" content="对静态成员的不正确描述是（）？   A. 静态数据成员要在类外定义和初始化 B. 非静态成员函数也可以操作静态数据成员 C. 静态成员不属于对象，是类的共享成员 D. 调用静态成员函数时要通过类或对象激活，所以静态成员函数拥有this指针  对于Ａ，类中静态成员都属于整个类共享，不属于某一个对象，必须在类内生声明，类外初始化。因为静态成员属于整个类，而不属于某个对象，如果在类内初始化，会导致每个">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://zqhjj.top/archives/">
+  <link rel="canonical" href="http://zqhjj.top/2019/03/06/笔记20190306/">
 
 
 
 
 
-  <title>Archive | It's not who you are underneath,it's what you do that defines you</title>
+  <title>笔记20190306 | It's not who you are underneath,it's what you do that defines you</title>
   
 
 
@@ -143,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -237,396 +239,230 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://zqhjj.top/2019/03/06/笔记20190306/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jimmy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/选区_006.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="It's not who you are underneath,it's what you do that defines you">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">笔记20190306</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-06T19:53:02+08:00">
+                2019-03-06
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2019-03-07T00:30:11+08:00">
+                2019-03-07
+              </time>
+            
+          </span>
+
           
-        
-        Um..! 14 posts in total. Keep on posting.
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/04/24/机器学习笔记1/" itemprop="url">
-              
-                <span itemprop="name">机器学习笔记1</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-24T22:06:36+08:00" content="2019-04-24">
-          04-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/06/笔记20190306/" itemprop="url">
-              
-                <span itemprop="name">笔记20190306</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-06T19:53:02+08:00" content="2019-03-06">
-          03-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
+            
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">visitor
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/24/LeetCode-11-Container-With-Most-Water/" itemprop="url">
+          
+            <div class="post-wordcount">
               
-                <span itemprop="name">LeetCode 11.Container With Most Water</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  287
+                </span>
               
-            </a>
-        
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-24T20:07:47+08:00" content="2018-12-24">
-          12-24
-        </time>
-      </div>
+              
+                <span class="post-meta-divider">|</span>
+              
 
-    </header>
-  </article>
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  1
+                </span>
+              
+            </div>
+          
 
+          
 
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/18/LeetCode-3-Longest-Substring-Without-Repeating-Characters-1/" itemprop="url">
-              
-                <span itemprop="name">LeetCode 3. Longest Substring Without Repeating Characters</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-18T20:33:13+08:00" content="2018-12-18">
-          12-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/17/生成无重复随机数/" itemprop="url">
-              
-                <span itemprop="name">生成无重复随机数</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-17T10:08:34+08:00" content="2018-12-17">
-          12-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <blockquote>
+<p>对静态成员的不正确描述是（）？</p>
+</blockquote>
+<blockquote>
+<p>A. 静态数据成员要在类外定义和初始化</p>
+<p>B. 非静态成员函数也可以操作静态数据成员</p>
+<p>C. 静态成员不属于对象，是类的共享成员</p>
+<p>D. 调用静态成员函数时要通过类或对象激活，所以静态成员函数拥有this指针</p>
+</blockquote>
+<p>对于Ａ，类中静态成员都属于整个类共享，不属于某一个对象，必须在类内生声明，类外初始化。因为静态成员属于整个类，而不属于某个对象，如果在类内初始化，会导致每个对象都包含该静态成员，这是矛盾的<br>如下所示：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">test</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">  <span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">int</span> a;               <span class="comment">// 类内声明</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> test::a = <span class="number">1</span>;                <span class="comment">// 类外初始化,这里的int不可少</span></span><br></pre></td></tr></table></figure></p>
+<p>错误用法如下所示:<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">test</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">  <span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">int</span> a = <span class="number">1</span>;           <span class="comment">// 此时编译器将会报错</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>B选项显然正确</p>
+<p>Ｃ中同Ａ</p>
+<p>Ｄ选项错误，静态成员属于整个类。但是this指针是当前对象指针，因此静态成员无法使用this指针:wq</p>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/12/04/redis源码阅读-sds/" itemprop="url">
-              
-                <span itemprop="name">redis源码阅读-sds</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-12-04T23:56:53+08:00" content="2018-12-04">
-          12-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/29/内联函数与宏/" itemprop="url">
-              
-                <span itemprop="name">内联函数与宏</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-29T20:00:11+08:00" content="2018-11-29">
-          11-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/29/LeetCode-15-3Sum/" itemprop="url">
-              
-                <span itemprop="name">LeetCode 15. 3Sum</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-29T13:41:57+08:00" content="2018-11-29">
-          11-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/26/redis源码阅读-zmalloc/" itemprop="url">
-              
-                <span itemprop="name">redis源码阅读 - zmalloc</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-26T23:50:04+08:00" content="2018-11-26">
-          11-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/26/LeetCode-9-Palindrome-Number/" itemprop="url">
-              
-                <span itemprop="name">LeetCode 9. Palindrome Number</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-26T08:41:02+08:00" content="2018-11-26">
-          11-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Jimmy
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://zqhjj.top/2019/03/06/笔记20190306/" title="笔记20190306">http://zqhjj.top/2019/03/06/笔记20190306/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/C/" rel="tag"># C++</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/12/24/LeetCode-11-Container-With-Most-Water/" rel="next" title="LeetCode 11.Container With Most Water">
+                <i class="fa fa-chevron-left"></i> LeetCode 11.Container With Most Water
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/24/机器学习笔记1/" rel="prev" title="机器学习笔记1">
+                机器学习笔记1 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -634,6 +470,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -899,6 +739,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

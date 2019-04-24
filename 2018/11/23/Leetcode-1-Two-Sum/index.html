@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="It&#39;s not who you are underneath,it&#39;s what you do that defines you">
 <meta property="og:description" content="leetcode的第一题也算是自己重新开始刷leetcode的一个开始吧。 先看题目：  Given an array of integers, return indices of the two numbers such that they add up to a specific target.  You may assume that each input would have exactl">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-27T18:02:28.208Z">
+<meta property="og:updated_time" content="2018-12-06T15:58:15.100Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Leetcode 1. Two Sum">
 <meta name="twitter:description" content="leetcode的第一题也算是自己重新开始刷leetcode的一个开始吧。 先看题目：  Given an array of integers, return indices of the two numbers such that they add up to a specific target.  You may assume that each input would have exactl">
@@ -298,8 +298,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-11-28T02:02:28+08:00">
-                2018-11-28
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-06T23:58:15+08:00">
+                2018-12-06
               </time>
             
           </span>
@@ -353,7 +353,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  872
+                  927
                 </span>
               
 
@@ -369,7 +369,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  3
+                  4
                 </span>
               
             </div>
@@ -417,6 +417,7 @@
 </blockquote>
 <h3 id="Java解法："><a href="#Java解法：" class="headerlink" title="Java解法："></a>Java解法：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">    <span class="keyword">int</span>[] res = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>];</span><br><span class="line">    HashMap&lt;Integer,Integer&gt; map = <span class="keyword">new</span> HashMap&lt;Integer, Integer&gt;();</span><br><span class="line">    map.put(nums[<span class="number">0</span>],<span class="number">0</span>);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>;i &lt; nums.length;++i) &#123;</span><br><span class="line">       <span class="keyword">int</span> number = target - nums[i];</span><br><span class="line">       <span class="keyword">if</span>(map.containsKey(number))&#123;</span><br><span class="line">           res[<span class="number">0</span>] = map.get(number);</span><br><span class="line">           res[<span class="number">1</span>] = i;</span><br><span class="line">           <span class="keyword">break</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">else</span> &#123;</span><br><span class="line">           map.put(nums[i],i);</span><br><span class="line">       &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="python解法"><a href="#python解法" class="headerlink" title="python解法:"></a>python解法:</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">twoSum</span><span class="params">(self, nums, target)</span>:</span></span><br><span class="line">        map = &#123;&#125;</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">            <span class="keyword">if</span> target - nums[i] <span class="keyword">in</span> map:  <span class="comment"># 在内部</span></span><br><span class="line">                <span class="keyword">return</span> [map[target - nums[i]], i]</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                map[nums[i]] = i</span><br></pre></td></tr></table></figure>
+<h3 id="Golang解法"><a href="#Golang解法" class="headerlink" title="Golang解法"></a>Golang解法</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">twoSum</span><span class="params">(nums []<span class="keyword">int</span>, target <span class="keyword">int</span>)</span> []<span class="title">int</span></span> &#123;</span><br><span class="line">	res := <span class="built_in">make</span>([]<span class="keyword">int</span>,<span class="number">2</span>,<span class="number">2</span>)</span><br><span class="line">	dict := <span class="built_in">make</span>(<span class="keyword">map</span>[<span class="keyword">int</span>]<span class="keyword">int</span>)		<span class="comment">// map</span></span><br><span class="line">	<span class="keyword">for</span> i,_ := <span class="keyword">range</span> nums&#123;</span><br><span class="line">		_,ok := dict[target - nums[i]]</span><br><span class="line">		<span class="keyword">if</span>(ok)&#123;</span><br><span class="line">			res[<span class="number">0</span>] = dict[target - nums[i]]</span><br><span class="line">			res[<span class="number">1</span>] = i</span><br><span class="line">			<span class="keyword">break</span></span><br><span class="line">		&#125;</span><br><span class="line">		dict[nums[i]] = i</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> res</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这题算是一个简单的开始吧，哈希的简单应用。</p>
 <p>希望自己以后也好好加油</p>
 
@@ -554,7 +555,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -565,7 +566,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -576,7 +577,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -609,7 +610,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#C-代码"><span class="nav-number">1.</span> <span class="nav-text">C++代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java解法："><span class="nav-number">2.</span> <span class="nav-text">Java解法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#python解法"><span class="nav-number">3.</span> <span class="nav-text">python解法:</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#C-代码"><span class="nav-number">1.</span> <span class="nav-text">C++代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java解法："><span class="nav-number">2.</span> <span class="nav-text">Java解法：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#python解法"><span class="nav-number">3.</span> <span class="nav-text">python解法:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Golang解法"><span class="nav-number">4.</span> <span class="nav-text">Golang解法</span></a></li></ol></div>
             
 
           </div>
@@ -629,7 +630,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -643,7 +644,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">8.3k</span>
+    <span title="Site words total count">10.9k</span>
   
 </div>
 
