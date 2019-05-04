@@ -331,7 +331,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  961
+                  130
                 </span>
               
 
@@ -347,7 +347,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  4
+                  1
                 </span>
               
             </div>
@@ -377,10 +377,10 @@
 <p>A solution set is:<br>[<br>  [-1, 0, 1],<br>  [-1, -1, 2]<br>]</p>
 </blockquote>
 <p>题目要求,在一个数组内找到三个数使之的和为0,结果返回一个二维数组.并且要求不能存在重复解</p>
-<p>不能使用重复解,在不动脑筋的情况下其实可以考虑使用set &lt;vector <int>&gt; 存储结果,并且便利每一种解法以此存入set,这种方式.最后返回的时候将其强制转换为vector &lt;vector<int>&gt;即可</int></int></p>
+<p>不能使用重复解,在不动脑筋的情况下其实可以考虑使用set <vector <int="">&gt; 存储结果,并且便利每一种解法以此存入set,这种方式.最后返回的时候将其强制转换为vector <vector<int>&gt;即可</vector<int></vector></p>
 <p>这种方式当然能通过,但是并不是一个好的方法.第一是使用了强制转换.然后时间复杂度上,由于需要遍历每一种解法,此时的时间复杂度将会变为O(n^3)</p>
 <p>如果在在线OJ系统中,这种基于暴力的方式在数据量不是很大的时候是能够通过的.但是如果这种题目出现在了面试中的话,这种解法肯定是拿不到满分的.</p>
-<p>对于这个问题,我们可以先看另外一个问题—2Sum</p>
+<p>对于这个问题,我们可以先看另外一个问题—-2Sum</p>
 <p>要求在一个数组中,找到两个数字使之加起来和为某个定值target,并且要求时间复杂度低于O(nlgn)</p>
 <p>暴力解法很简单</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; twoSum (<span class="built_in">vector</span> &lt;<span class="keyword">int</span>&gt; nums, <span class="keyword">int</span> target)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; nums.size();++i)</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>;j &lt; nums.size();++j)</span><br><span class="line">            <span class="keyword">if</span>(nums[i] == numss[j])</span><br><span class="line">                <span class="keyword">return</span> &#123;nums[i],nums[j]&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -616,7 +616,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">13.8k</span>
+    <span title="Site words total count">12.9k</span>
   
 </div>
 

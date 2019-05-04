@@ -380,7 +380,7 @@
 <p>举一个十分简单的例子</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta"># <span class="meta-keyword">define</span> F(x) x * x</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; F(<span class="number">5</span>) &lt;&lt; <span class="built_in">endl</span>; ---①</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; F(<span class="number">5</span> + <span class="number">5</span>) &lt;&lt; <span class="built_in">endl</span>; ---②</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>在这个程序中,①处的输出应该是5,但是②处的输出却不是100,而是35</p>
-<p>因为F(5 + 5) = 5 + 5 * 5 + 5 = 35   –<strong>宏只是文本的替换</strong></p>
+<p>因为F(5 + 5) = 5 + 5 <em> 5 + 5 = 35   —<em>*宏只是文本的替换</em></em></p>
 <p>所以在使用宏函数的时候一定要注意好括号的问题</p>
 <h3 id="宏和内联函数的区别"><a href="#宏和内联函数的区别" class="headerlink" title="宏和内联函数的区别"></a>宏和内联函数的区别</h3><ol>
 <li><p>内联函数是一个<strong>函数</strong>,但是宏只是简单的文本替换</p>
@@ -630,7 +630,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">13.8k</span>
+    <span title="Site words total count">12.9k</span>
   
 </div>
 
