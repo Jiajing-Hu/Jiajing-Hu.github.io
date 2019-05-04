@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="C/C++,">
+  <meta name="keywords" content="机器学习,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="内联函数与宏,这两者通常能够实现类似的功能,也在面试中经常放在一起比较.所以这里简单说一说内联函数和宏的区别 内联函数在C/C++中,一般函数的储存是储存函数的地址.当我们调用一个函数的时候,将会跳转到相应的地址,并且在函数调用结束后返回.在执行函数的调用时,程序先储存函数的地址,然后讲函数的参数复制到栈中,执行函数的代码,最后返回调用函数除的地址. 简单地来说,在一般的函数调用的时候.内存存在两">
-<meta name="keywords" content="C&#x2F;C++">
+<meta name="description" content="模型评估与选择1经验误差与过拟合错误率 分类错误的样本数占样本总数的比例被称作为错误率 如果在m个样本中有a个样本分类错误，则错误率E = a/m 精度分类正确的样本数占样本总数的比例被称为精度  一般情况下，精度 = 1 - 错误率  误差 学习器的实际预测输出与样本的真实输出之间的差异被称为误差。其中，学习器在训练集上的误差被称为训练误差，而在新样本上的误差被称为泛化误差  过拟合 过拟合是指">
+<meta name="keywords" content="机器学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="内联函数与宏">
-<meta property="og:url" content="http://zqhjj.top/2018/11/29/内联函数与宏/index.html">
+<meta property="og:title" content="模型选择">
+<meta property="og:url" content="http://zqhjj.top/2019/05/04/模型选择/index.html">
 <meta property="og:site_name" content="It&#39;s not who you are underneath,it&#39;s what you do that defines you">
-<meta property="og:description" content="内联函数与宏,这两者通常能够实现类似的功能,也在面试中经常放在一起比较.所以这里简单说一说内联函数和宏的区别 内联函数在C/C++中,一般函数的储存是储存函数的地址.当我们调用一个函数的时候,将会跳转到相应的地址,并且在函数调用结束后返回.在执行函数的调用时,程序先储存函数的地址,然后讲函数的参数复制到栈中,执行函数的代码,最后返回调用函数除的地址. 简单地来说,在一般的函数调用的时候.内存存在两">
+<meta property="og:description" content="模型评估与选择1经验误差与过拟合错误率 分类错误的样本数占样本总数的比例被称作为错误率 如果在m个样本中有a个样本分类错误，则错误率E = a/m 精度分类正确的样本数占样本总数的比例被称为精度  一般情况下，精度 = 1 - 错误率  误差 学习器的实际预测输出与样本的真实输出之间的差异被称为误差。其中，学习器在训练集上的误差被称为训练误差，而在新样本上的误差被称为泛化误差  过拟合 过拟合是指">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-04T16:14:31.756Z">
+<meta property="og:updated_time" content="2019-05-04T14:14:14.400Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="内联函数与宏">
-<meta name="twitter:description" content="内联函数与宏,这两者通常能够实现类似的功能,也在面试中经常放在一起比较.所以这里简单说一说内联函数和宏的区别 内联函数在C/C++中,一般函数的储存是储存函数的地址.当我们调用一个函数的时候,将会跳转到相应的地址,并且在函数调用结束后返回.在执行函数的调用时,程序先储存函数的地址,然后讲函数的参数复制到栈中,执行函数的代码,最后返回调用函数除的地址. 简单地来说,在一般的函数调用的时候.内存存在两">
+<meta name="twitter:title" content="模型选择">
+<meta name="twitter:description" content="模型评估与选择1经验误差与过拟合错误率 分类错误的样本数占样本总数的比例被称作为错误率 如果在m个样本中有a个样本分类错误，则错误率E = a/m 精度分类正确的样本数占样本总数的比例被称为精度  一般情况下，精度 = 1 - 错误率  误差 学习器的实际预测输出与样本的真实输出之间的差异被称为误差。其中，学习器在训练集上的误差被称为训练误差，而在新样本上的误差被称为泛化误差  过拟合 过拟合是指">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://zqhjj.top/2018/11/29/内联函数与宏/">
+  <link rel="canonical" href="http://zqhjj.top/2019/05/04/模型选择/">
 
 
 
 
 
-  <title>内联函数与宏 | It's not who you are underneath,it's what you do that defines you</title>
+  <title>模型选择 | It's not who you are underneath,it's what you do that defines you</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zqhjj.top/2018/11/29/内联函数与宏/">
+    <link itemprop="mainEntityOfPage" href="http://zqhjj.top/2019/05/04/模型选择/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jimmy">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">内联函数与宏</h1>
+          <h1 class="post-title" itemprop="name headline">模型选择</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-29T20:00:11+08:00">
-                2018-11-29
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-04T21:19:49+08:00">
+                2019-05-04
               </time>
             
 
@@ -298,8 +298,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-05T00:14:31+08:00">
-                2018-12-05
+              <time title="Post modified" itemprop="dateModified" datetime="2019-05-04T22:14:14+08:00">
+                2019-05-04
               </time>
             
           </span>
@@ -331,7 +331,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  887
+                  1.5k
                 </span>
               
 
@@ -347,7 +347,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  3
+                  5
                 </span>
               
             </div>
@@ -368,40 +368,36 @@
       
 
       
-        <p>内联函数与宏,这两者通常能够实现类似的功能,也在面试中经常放在一起比较.所以这里简单说一说内联函数和宏的区别</p>
-<h3 id="内联函数"><a href="#内联函数" class="headerlink" title="内联函数"></a>内联函数</h3><p>在C/C++中,一般函数的储存是储存函数的地址.当我们调用一个函数的时候,将会跳转到相应的地址,并且在函数调用结束后返回.在执行函数的调用时,程序先储存函数的地址,然后讲函数的参数复制到栈中,执行函数的代码,最后返回调用函数除的地址.</p>
-<p>简单地来说,在一般的函数调用的时候.内存存在两次跳转,第一次从调用点跳转到函数地址,然后在函数返回时跳回调用点.这里的来回跳转对于机器来说是需要一定的开销的,另外函数在调用的过程中使用的是函数栈,但是函数栈的大小是有限的,如果在某个时候大量的进行函数调用或者函数的递归调用,有可能导致栈空间不足使程序出错.</p>
-<p>对于一些经常调用的<strong>小型</strong>函数,如果经常反复跳转的话,程序的性能将会被拖慢.所以内联函数就应运而生了.</p>
-<blockquote>
-<p>在计算机科学中，内联函数（有时称作在线函数或编译时期展开函数）是一种编程语言结构，用来建议编译器对一些特殊函数进行内联扩展（有时称作在线扩展）；也就是说建议编译器将指定的函数体插入并取代每一处调用该函数的地方（上下文），从而节省了每次调用函数带来的额外时间开支。</p>
+        <h1 id="模型评估与选择1"><a href="#模型评估与选择1" class="headerlink" title="模型评估与选择1"></a><strong>模型评估与选择1</strong></h1><h2 id="经验误差与过拟合"><a href="#经验误差与过拟合" class="headerlink" title="经验误差与过拟合"></a>经验误差与过拟合</h2><h3 id="错误率"><a href="#错误率" class="headerlink" title="错误率"></a>错误率</h3><blockquote>
+<p>分类错误的样本数占样本总数的比例被称作为<strong>错误率</strong></p>
+<p>如果在<em>m</em>个样本中有<em>a</em>个样本分类错误，则错误率<em>E = a/m</em></p>
+<h3 id="精度"><a href="#精度" class="headerlink" title="精度"></a>精度</h3><p>分类正确的样本数占样本总数的比例被称为精度</p>
+<p> 一般情况下，精度 = 1 - 错误率</p>
 </blockquote>
-<p>也就是说,内联函数实在函数的原地展开,并不会设计到内存的跳转问题.这样的好处是在函数调用的时候避免了跳转带来的时间开销.但是这样牺牲了一些内存.所以我们一般规定内联函数中不允许出现循环</p>
-<h3 id="宏"><a href="#宏" class="headerlink" title="宏"></a>宏</h3><p>宏有时候也叫宏函数,但是<strong>宏不是函数</strong>,它只是简单的<strong>文本替换</strong></p>
-<p>举一个十分简单的例子</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta"># <span class="meta-keyword">define</span> F(x) x * x</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; F(<span class="number">5</span>) &lt;&lt; <span class="built_in">endl</span>; ---①</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; F(<span class="number">5</span> + <span class="number">5</span>) &lt;&lt; <span class="built_in">endl</span>; ---②</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在这个程序中,①处的输出应该是5,但是②处的输出却不是100,而是35</p>
-<p>因为F(5 + 5) = 5 + 5 * 5 + 5 = 35   –<strong>宏只是文本的替换</strong></p>
-<p>所以在使用宏函数的时候一定要注意好括号的问题</p>
-<h3 id="宏和内联函数的区别"><a href="#宏和内联函数的区别" class="headerlink" title="宏和内联函数的区别"></a>宏和内联函数的区别</h3><ol>
-<li><p>内联函数是一个<strong>函数</strong>,但是宏只是简单的文本替换</p>
-</li>
-<li><p>内联函数在编译期展开,但是宏是预处理命令,所以在预编译期展开</p>
-</li>
-<li><p>内联函数支持类型检查,但是宏不支持</p>
-</li>
-<li><p>内联函数有返回值,宏没有返回值</p>
-</li>
-<li><p>内联函数将会造成程序体积的增加,但是宏不会</p>
-</li>
-</ol>
-<h3 id="一些补充"><a href="#一些补充" class="headerlink" title="一些补充"></a>一些补充</h3><ol>
-<li><p>宏还有其他的很多功能,作为函数只是其中的一个小功能,这里讨论的宏只是函数形式的宏</p>
-</li>
-<li><p>inline只是一个<strong>建议</strong>,但是编译器可以拒绝.也就是inline开头的不一定都是内联函数</p>
-</li>
-<li><p>在class中的函数都是内联函数</p>
-</li>
-</ol>
+<h3 id="误差"><a href="#误差" class="headerlink" title="误差"></a>误差</h3><blockquote>
+<p>学习器的实际预测输出与样本的真实输出之间的差异被称为<strong>误差</strong>。<br>其中，学习器在训练集上的误差被称为<strong>训练误差</strong>，而在新样本上的误差被称为<strong>泛化误差</strong></p>
+</blockquote>
+<h3 id="过拟合"><a href="#过拟合" class="headerlink" title="过拟合"></a>过拟合</h3><blockquote>
+<p><strong>过拟合</strong>是指为了得到一致假设而使假设变得过度严格。部分情况下，学习器将训练样本学习的“太好了”，导致其将训练样本本身的一些特征当作了所有潜在样本的特征，这种现象被称为<strong>过拟合</strong>。与<strong>过拟合</strong>相对应的是<strong>欠拟合</strong>,即学习器对于训练样本的一些一般性质尚未学习好。<br>有很多导致过拟合的原因，其中最常见的原因是学习能力过于强大，导致学习器将训练样本中一些不太一般的特性都学到了。<br>而欠拟合则是应为学习器学习能力低下造成。<br>一般来说，欠拟合较为容易克服，而过拟合则是机器学习中面临的关键障碍。</p>
+<p>举一个简单的例子，学习器对带有锯齿的树叶进行训练。<br>出现过拟合情况时，学习器将会认为树叶必须带有锯齿，对于不带有锯齿的树叶其分类结果为将其分类为非树叶，而欠拟合情况将会出现认为绿色的都属树叶，将整棵树都判断为树叶的情况。</p>
+</blockquote>
+<h2 id="评估方法"><a href="#评估方法" class="headerlink" title="评估方法"></a>评估方法</h2><p>对于一种机器学习方法，一般情况下需要对其进行泛化误差性能评估并且根据其结果进行算法选择。因此，在评估过程中需要一个测试集来对机器学习算法进行性能评估，然后以测试集上的<strong>测试误差</strong>作为<strong>泛化误差</strong>的近似。</p>
+<p>对于一个包含<em>m</em>个样例<em>D</em>,其中$D={(\boldsymbol{x_1},y_1),(\boldsymbol{x_2},y_2)…(\boldsymbol{x_m},y_m)}​$。为了使系统即能通过其进行训练，又能通过其进行测试，一般可以将其划分为训练集和测试集两部分。一些常见的分类方法如下所示：</p>
+<h3 id="留出法"><a href="#留出法" class="headerlink" title="留出法"></a>留出法</h3><blockquote>
+<p>留出法是直接将数据集$D$划分为两个互斥的集合。其中一部分用作训练集$S$,另一部分则用作测试集$T$，即为$D=S\cup T$，且$S\cap T=\emptyset$。在$S$上训练出模型后，用$T$来评估其测试误差。</p>
+<p>一般情况下，训练集/测试集的划分要尽可能保持数据分布的一致性。避免数据划分过程中引入的额外偏差对最终的结果产生影响。<br>使用留出法一般会遇到一个问题——若训练集$S$中包含大多数样本，那么训练出的模型可能更接近于用数据集$D$训练出的模型，但是由于测试集$T$较小，因此评估结果可能不够精确。但是若令训练集$T$中包含更多样本，那么训练集$S$与$D$差别较大，模型与用$D$训练出的模型可能有较大差别，从而降低了评估结果的保真性。<br>一般情下，常见做法是将$\frac{2}{3}$至$\frac{4}{5}$的样本数量用作训练，其他的用作测试。</p>
+</blockquote>
+<h3 id="交叉验证法"><a href="#交叉验证法" class="headerlink" title="交叉验证法"></a>交叉验证法</h3><blockquote>
+<p>交叉验证法先将数据集$D$划分为$k$个大小相似的互斥子集，即$D=D_1\cup D_2 …\cup D_k$，且其中$D_i\cap D_j=\emptyset$，每个子集尽可能保持数据分布的一致性，即从$D$中分层采样得到。<br>然后，每次使用$k-1$个子集的并集作为训练集，余下的子集作为测试集。这样就可以获得$k$组训练/测试数据。从而可以进行$k$次训练和测试，最终返回的结果是这$k$次测试结果的均值。<br>交叉验证法评估结果的稳定性和保真性很大程度上取决于$k$的取值，所以交叉验证法一般情况下被称为<strong>$k$折交叉验证</strong></p>
+</blockquote>
+<h3 id="留一法"><a href="#留一法" class="headerlink" title="留一法"></a>留一法</h3><blockquote>
+<p>假定数据集$D$中包含$m$个样本，若在交叉验证法中令$k=m$，则将会得到交叉验证法的一个特例——留一法(Leave-One-Out,LOO)<br>所以每个子集仅仅包含一个样本，因此留一法不会收到随机样本划分方式的影响。<br>另外，由于留一法相对于原始数据集$D$仅仅少了一个样本，因此通过留一法训练得到的模型与$D$得到的模型十分相似，因此其结果往往比较精确。<br>但是，一般情况下，留一法计算量较大，在面对较大的数据集时性能开销可能是难以忍受的。</p>
+</blockquote>
+<h3 id="自助法"><a href="#自助法" class="headerlink" title="自助法"></a>自助法</h3><blockquote>
+<p>给定包含$m$个样本的数据集$D$，每次从$D$中随机抽取一个样本将其拷贝放入训练集$D’$，然后将其放回$D$中，使该样本在下次采集中仍有可能被采集。此过程执行$m$次后，将会得到一个包含$m$个样本的数据集$D’$。这就是自助采集的结果。<br>这种采集方式将会有一部分样本不会被采集到，其概率大约为：</p>
+<script type="math/tex; mode=display">
+lim_{m\to \infty}(1-\frac{1}{m})^m=\frac{1}{e}=0.368</script><p>即约有36.8%的数据将不会被采集。<br>于是我们可以使用$D’$作为训练集，而使用$D$\ $D’$作为测试集。</p>
+</blockquote>
 
       
     </div>
@@ -422,7 +418,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://zqhjj.top/2018/11/29/内联函数与宏/" title="内联函数与宏">http://zqhjj.top/2018/11/29/内联函数与宏/</a>
+    <a href="http://zqhjj.top/2019/05/04/模型选择/" title="模型选择">http://zqhjj.top/2019/05/04/模型选择/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -437,7 +433,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/C-C/" rel="tag"># C/C++</a>
+            <a href="/tags/机器学习/" rel="tag"># 机器学习</a>
           
         </div>
       
@@ -450,8 +446,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/29/LeetCode-15-3Sum/" rel="next" title="LeetCode 15. 3Sum">
-                <i class="fa fa-chevron-left"></i> LeetCode 15. 3Sum
+              <a href="/2019/04/28/深入理解计算机系统笔记1/" rel="next" title="深入理解计算机系统笔记1">
+                <i class="fa fa-chevron-left"></i> 深入理解计算机系统笔记1
               </a>
             
           </div>
@@ -459,10 +455,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/04/redis源码阅读-sds/" rel="prev" title="redis源码阅读-sds">
-                redis源码阅读-sds <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -596,7 +588,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#内联函数"><span class="nav-number">1.</span> <span class="nav-text">内联函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宏"><span class="nav-number">2.</span> <span class="nav-text">宏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宏和内联函数的区别"><span class="nav-number">3.</span> <span class="nav-text">宏和内联函数的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一些补充"><span class="nav-number">4.</span> <span class="nav-text">一些补充</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#模型评估与选择1"><span class="nav-number">1.</span> <span class="nav-text">模型评估与选择1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#经验误差与过拟合"><span class="nav-number">1.1.</span> <span class="nav-text">经验误差与过拟合</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#错误率"><span class="nav-number">1.1.1.</span> <span class="nav-text">错误率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#精度"><span class="nav-number">1.1.2.</span> <span class="nav-text">精度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#误差"><span class="nav-number">1.1.3.</span> <span class="nav-text">误差</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过拟合"><span class="nav-number">1.1.4.</span> <span class="nav-text">过拟合</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#评估方法"><span class="nav-number">1.2.</span> <span class="nav-text">评估方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#留出法"><span class="nav-number">1.2.1.</span> <span class="nav-text">留出法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#交叉验证法"><span class="nav-number">1.2.2.</span> <span class="nav-text">交叉验证法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#留一法"><span class="nav-number">1.2.3.</span> <span class="nav-text">留一法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自助法"><span class="nav-number">1.2.4.</span> <span class="nav-text">自助法</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -845,6 +837,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
