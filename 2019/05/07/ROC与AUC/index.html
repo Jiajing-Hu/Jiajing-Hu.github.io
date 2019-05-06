@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="C/C++,">
+  <meta name="keywords" content="机器学习,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="内联函数与宏,这两者通常能够实现类似的功能,也在面试中经常放在一起比较.所以这里简单说一说内联函数和宏的区别 内联函数在C/C++中,一般函数的储存是储存函数的地址.当我们调用一个函数的时候,将会跳转到相应的地址,并且在函数调用结束后返回.在执行函数的调用时,程序先储存函数的地址,然后讲函数的参数复制到栈中,执行函数的代码,最后返回调用函数除的地址. 简单地来说,在一般的函数调用的时候.内存存在两">
-<meta name="keywords" content="C&#x2F;C++">
+<meta name="description" content="ROC与AUC很多学习器是为测试样例产生一个实值或者概率预测，然后将其与一个阈值比较，若大于阈值则分类为正例，反之被分类为反例。 实际上，根据这个实值或者预测结果，可以将样例进行排序，最后可能是正例的排在最前面，最不可能是正例的排在最后面。分类过程就是在这个排序过程中设置一个“截断点”，截断点之前的将会被判定为正例，之后的将会被判定为反例。 在不同的任务中，一般“截断点”的设置也不会相同。若系统更">
+<meta name="keywords" content="机器学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="内联函数与宏">
-<meta property="og:url" content="http://zqhjj.top/2018/11/29/内联函数与宏/index.html">
+<meta property="og:title" content="ROC与AUC">
+<meta property="og:url" content="http://zqhjj.top/2019/05/07/ROC与AUC/index.html">
 <meta property="og:site_name" content="It&#39;s not who you are underneath,it&#39;s what you do that defines you">
-<meta property="og:description" content="内联函数与宏,这两者通常能够实现类似的功能,也在面试中经常放在一起比较.所以这里简单说一说内联函数和宏的区别 内联函数在C/C++中,一般函数的储存是储存函数的地址.当我们调用一个函数的时候,将会跳转到相应的地址,并且在函数调用结束后返回.在执行函数的调用时,程序先储存函数的地址,然后讲函数的参数复制到栈中,执行函数的代码,最后返回调用函数除的地址. 简单地来说,在一般的函数调用的时候.内存存在两">
+<meta property="og:description" content="ROC与AUC很多学习器是为测试样例产生一个实值或者概率预测，然后将其与一个阈值比较，若大于阈值则分类为正例，反之被分类为反例。 实际上，根据这个实值或者预测结果，可以将样例进行排序，最后可能是正例的排在最前面，最不可能是正例的排在最后面。分类过程就是在这个排序过程中设置一个“截断点”，截断点之前的将会被判定为正例，之后的将会被判定为反例。 在不同的任务中，一般“截断点”的设置也不会相同。若系统更">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-06T16:04:01.471Z">
+<meta property="og:updated_time" content="2019-05-06T16:11:27.041Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="内联函数与宏">
-<meta name="twitter:description" content="内联函数与宏,这两者通常能够实现类似的功能,也在面试中经常放在一起比较.所以这里简单说一说内联函数和宏的区别 内联函数在C/C++中,一般函数的储存是储存函数的地址.当我们调用一个函数的时候,将会跳转到相应的地址,并且在函数调用结束后返回.在执行函数的调用时,程序先储存函数的地址,然后讲函数的参数复制到栈中,执行函数的代码,最后返回调用函数除的地址. 简单地来说,在一般的函数调用的时候.内存存在两">
+<meta name="twitter:title" content="ROC与AUC">
+<meta name="twitter:description" content="ROC与AUC很多学习器是为测试样例产生一个实值或者概率预测，然后将其与一个阈值比较，若大于阈值则分类为正例，反之被分类为反例。 实际上，根据这个实值或者预测结果，可以将样例进行排序，最后可能是正例的排在最前面，最不可能是正例的排在最后面。分类过程就是在这个排序过程中设置一个“截断点”，截断点之前的将会被判定为正例，之后的将会被判定为反例。 在不同的任务中，一般“截断点”的设置也不会相同。若系统更">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://zqhjj.top/2018/11/29/内联函数与宏/">
+  <link rel="canonical" href="http://zqhjj.top/2019/05/07/ROC与AUC/">
 
 
 
 
 
-  <title>内联函数与宏 | It's not who you are underneath,it's what you do that defines you</title>
+  <title>ROC与AUC | It's not who you are underneath,it's what you do that defines you</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zqhjj.top/2018/11/29/内联函数与宏/">
+    <link itemprop="mainEntityOfPage" href="http://zqhjj.top/2019/05/07/ROC与AUC/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jimmy">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">内联函数与宏</h1>
+          <h1 class="post-title" itemprop="name headline">ROC与AUC</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-29T20:00:11+08:00">
-                2018-11-29
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-07T00:03:44+08:00">
+                2019-05-07
               </time>
             
 
@@ -298,7 +298,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-05-07T00:04:01+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2019-05-07T00:11:27+08:00">
                 2019-05-07
               </time>
             
@@ -331,7 +331,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  887
+                  692
                 </span>
               
 
@@ -347,7 +347,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  3
+                  2
                 </span>
               
             </div>
@@ -368,40 +368,22 @@
       
 
       
-        <p>内联函数与宏,这两者通常能够实现类似的功能,也在面试中经常放在一起比较.所以这里简单说一说内联函数和宏的区别</p>
-<h3 id="内联函数"><a href="#内联函数" class="headerlink" title="内联函数"></a>内联函数</h3><p>在C/C++中,一般函数的储存是储存函数的地址.当我们调用一个函数的时候,将会跳转到相应的地址,并且在函数调用结束后返回.在执行函数的调用时,程序先储存函数的地址,然后讲函数的参数复制到栈中,执行函数的代码,最后返回调用函数除的地址.</p>
-<p>简单地来说,在一般的函数调用的时候.内存存在两次跳转,第一次从调用点跳转到函数地址,然后在函数返回时跳回调用点.这里的来回跳转对于机器来说是需要一定的开销的,另外函数在调用的过程中使用的是函数栈,但是函数栈的大小是有限的,如果在某个时候大量的进行函数调用或者函数的递归调用,有可能导致栈空间不足使程序出错.</p>
-<p>对于一些经常调用的<strong>小型</strong>函数,如果经常反复跳转的话,程序的性能将会被拖慢.所以内联函数就应运而生了.</p>
-<blockquote>
-<p>在计算机科学中，内联函数（有时称作在线函数或编译时期展开函数）是一种编程语言结构，用来建议编译器对一些特殊函数进行内联扩展（有时称作在线扩展）；也就是说建议编译器将指定的函数体插入并取代每一处调用该函数的地方（上下文），从而节省了每次调用函数带来的额外时间开支。</p>
-</blockquote>
-<p>也就是说,内联函数实在函数的原地展开,并不会设计到内存的跳转问题.这样的好处是在函数调用的时候避免了跳转带来的时间开销.但是这样牺牲了一些内存.所以我们一般规定内联函数中不允许出现循环</p>
-<h3 id="宏"><a href="#宏" class="headerlink" title="宏"></a>宏</h3><p>宏有时候也叫宏函数,但是<strong>宏不是函数</strong>,它只是简单的<strong>文本替换</strong></p>
-<p>举一个十分简单的例子</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># <span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta"># <span class="meta-keyword">define</span> F(x) x * x</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; F(<span class="number">5</span>) &lt;&lt; <span class="built_in">endl</span>; ---①</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; F(<span class="number">5</span> + <span class="number">5</span>) &lt;&lt; <span class="built_in">endl</span>; ---②</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>在这个程序中,①处的输出应该是5,但是②处的输出却不是100,而是35</p>
-<p>因为F(5 + 5) = 5 + 5 <em> 5 + 5 = 35   —<em>*宏只是文本的替换</em></em></p>
-<p>所以在使用宏函数的时候一定要注意好括号的问题</p>
-<h3 id="宏和内联函数的区别"><a href="#宏和内联函数的区别" class="headerlink" title="宏和内联函数的区别"></a>宏和内联函数的区别</h3><ol>
-<li><p>内联函数是一个<strong>函数</strong>,但是宏只是简单的文本替换</p>
-</li>
-<li><p>内联函数在编译期展开,但是宏是预处理命令,所以在预编译期展开</p>
-</li>
-<li><p>内联函数支持类型检查,但是宏不支持</p>
-</li>
-<li><p>内联函数有返回值,宏没有返回值</p>
-</li>
-<li><p>内联函数将会造成程序体积的增加,但是宏不会</p>
-</li>
-</ol>
-<h3 id="一些补充"><a href="#一些补充" class="headerlink" title="一些补充"></a>一些补充</h3><ol>
-<li><p>宏还有其他的很多功能,作为函数只是其中的一个小功能,这里讨论的宏只是函数形式的宏</p>
-</li>
-<li><p>inline只是一个<strong>建议</strong>,但是编译器可以拒绝.也就是inline开头的不一定都是内联函数</p>
-</li>
-<li><p>在class中的函数都是内联函数</p>
-</li>
-</ol>
+        <h1 id="ROC与AUC"><a href="#ROC与AUC" class="headerlink" title="ROC与AUC"></a>ROC与AUC</h1><p>很多学习器是为测试样例产生一个实值或者概率预测，然后将其与一个阈值比较，若大于阈值则分类为正例，反之被分类为反例。</p>
+<p>实际上，根据这个实值或者预测结果，可以将样例进行排序，最后可能是正例的排在最前面，最不可能是正例的排在最后面。分类过程就是在这个排序过程中设置一个“截断点”，截断点之前的将会被判定为正例，之后的将会被判定为反例。</p>
+<p>在不同的任务中，一般“截断点”的设置也不会相同。若系统更加重视查准率，则可以将截断点设置较为靠前；若系统更加重视查全率，则可以将截断点设置较为靠后。</p>
+<hr>
+<h2 id="ROC"><a href="#ROC" class="headerlink" title="ROC"></a>ROC</h2><p>ROC全称是<strong>受试者工作特征曲线</strong>。与P-R曲线类似，在进行机器学习的过程中，每次根据学习器的预测结果对样例进行排序，同时按照顺序对每个样例依次作为正例进行预测。每次计算其<strong>真正例率</strong>以及<strong>假正例率</strong>，分别作为纵轴以及横轴。这就可以得到<strong>ROC</strong>曲线。</p>
+<p>其中，真正例率简称(TPR)，其定义为：</p>
+<script type="math/tex; mode=display">
+TP= \frac{TP}{TP+FN}</script><p>假正例率简称FPR，定义为：</p>
+<script type="math/tex; mode=display">
+FP=\frac{FP}{TN+FP}</script><p>ROC图绘制方式如下：<br>给定$m^+$个正例和$m^-$个反例。根据机器学习预测结果对其进行排序。然后把分类阈值设置为最大，即所有样例均为反例。此时真正例率与假正例率均为0，在坐标(0,0)处标记一个点。然后依次将每个样例划分为正例，设前一个点的标记为$(x,y)$，若当前点为真正例，则对应点的坐标为$(x,y+\frac{1}{m^+})$，反之若当前点为假正例，则对应坐标为$(x+\frac{1}{m^-},y)$。</p>
+<p>在学习器性能对比时，若有一个学习器的ROC曲线被另一个完全包住，则可以断言后者的性能优于前者。若曲线存在交叉，则可以对比ROC曲线下的面积，即<strong>AUC</strong>。</p>
+<p>直接计算AUC较为复杂，一种AUC的近似估算方式为（近似看作梯形计算）：</p>
+<script type="math/tex; mode=display">
+AUC=\frac{1}{2}\sum_{i=1}^{m-1}(x_{i+1}-x_i)(y_i+y_{i+1})</script><p>AUC考虑的是样本预测的排序质量，与排序误差有着紧密的联系。给定$m^+$个正例和$m^-$个反例。令$D^+$与$D^-$分别表示正例、反例集合。<br>则损失可以定义为：</p>
+<script type="math/tex; mode=display">
+\mathcal{l_{rank}}=\frac{1}{m^+m^-}\sum_{\mathbb{x^+}\in D^+}\sum_{\mathbb{x^-}\in D^-}(\mathbb{I}(f(\mathbb x^+)<f(\mathbb x^-))+\frac{1}{2}\mathbb{I}(f(\mathbb{x^+})=(f(\mathbb{x^-})))</script><p>对于每一个样例，若正例的预测值小于反例，则记录为一个罚分，否则记录为0.5个罚分。</p>
 
       
     </div>
@@ -422,7 +404,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://zqhjj.top/2018/11/29/内联函数与宏/" title="内联函数与宏">http://zqhjj.top/2018/11/29/内联函数与宏/</a>
+    <a href="http://zqhjj.top/2019/05/07/ROC与AUC/" title="ROC与AUC">http://zqhjj.top/2019/05/07/ROC与AUC/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -437,7 +419,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/C-C/" rel="tag"># C/C++</a>
+            <a href="/tags/机器学习/" rel="tag"># 机器学习</a>
           
         </div>
       
@@ -450,8 +432,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/29/LeetCode-15-3Sum/" rel="next" title="LeetCode 15. 3Sum">
-                <i class="fa fa-chevron-left"></i> LeetCode 15. 3Sum
+              <a href="/2019/05/05/模型评估与选择——性能度量/" rel="next" title="模型评估与选择——性能度量">
+                <i class="fa fa-chevron-left"></i> 模型评估与选择——性能度量
               </a>
             
           </div>
@@ -459,10 +441,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/04/redis源码阅读-sds/" rel="prev" title="redis源码阅读-sds">
-                redis源码阅读-sds <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -596,7 +574,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#内联函数"><span class="nav-number">1.</span> <span class="nav-text">内联函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宏"><span class="nav-number">2.</span> <span class="nav-text">宏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#宏和内联函数的区别"><span class="nav-number">3.</span> <span class="nav-text">宏和内联函数的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一些补充"><span class="nav-number">4.</span> <span class="nav-text">一些补充</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#ROC与AUC"><span class="nav-number">1.</span> <span class="nav-text">ROC与AUC</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ROC"><span class="nav-number">1.1.</span> <span class="nav-text">ROC</span></a></li></ol></li></ol></div>
             
 
           </div>
