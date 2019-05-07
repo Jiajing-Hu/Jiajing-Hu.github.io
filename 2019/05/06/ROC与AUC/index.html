@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="leetcode,">
+  <meta name="keywords" content="机器学习,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="Given n non-negative integers a1, a2, …, an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two">
-<meta name="keywords" content="leetcode">
+<meta name="description" content="# ROC与AUC 很多学习器是为测试样例产生一个实值或者概率预测，然后将其与一个阈值比较，若大于阈值则分类为正例，反之被分类为反例。 实际上，根据这个实值或者预测结果，可以将样例进行排序，最后可能是正例的排在最前面，最不可能是正例的排在最后面。分类过程就是在这个排序过程中设置一个“截断点”，截断点之前的将会被判定为正例，之后的将会被判定为反例。 在不同的任务中，一般“截断点”的设置也不会相同。若">
+<meta name="keywords" content="机器学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode 11.Container With Most Water">
-<meta property="og:url" content="http://zqhjj.top/2018/12/24/LeetCode-11-Container-With-Most-Water/index.html">
+<meta property="og:title" content="ROC与AUC">
+<meta property="og:url" content="http://zqhjj.top/2019/05/06/ROC与AUC/index.html">
 <meta property="og:site_name" content="It&#39;s not who you are underneath,it&#39;s what you do that defines you">
-<meta property="og:description" content="Given n non-negative integers a1, a2, …, an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two">
+<meta property="og:description" content="# ROC与AUC 很多学习器是为测试样例产生一个实值或者概率预测，然后将其与一个阈值比较，若大于阈值则分类为正例，反之被分类为反例。 实际上，根据这个实值或者预测结果，可以将样例进行排序，最后可能是正例的排在最前面，最不可能是正例的排在最后面。分类过程就是在这个排序过程中设置一个“截断点”，截断点之前的将会被判定为正例，之后的将会被判定为反例。 在不同的任务中，一般“截断点”的设置也不会相同。若">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-06T16:30:11.838Z">
+<meta property="og:updated_time" content="2019-05-07T08:53:39.086Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="LeetCode 11.Container With Most Water">
-<meta name="twitter:description" content="Given n non-negative integers a1, a2, …, an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two">
+<meta name="twitter:title" content="ROC与AUC">
+<meta name="twitter:description" content="# ROC与AUC 很多学习器是为测试样例产生一个实值或者概率预测，然后将其与一个阈值比较，若大于阈值则分类为正例，反之被分类为反例。 实际上，根据这个实值或者预测结果，可以将样例进行排序，最后可能是正例的排在最前面，最不可能是正例的排在最后面。分类过程就是在这个排序过程中设置一个“截断点”，截断点之前的将会被判定为正例，之后的将会被判定为反例。 在不同的任务中，一般“截断点”的设置也不会相同。若">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://zqhjj.top/2018/12/24/LeetCode-11-Container-With-Most-Water/">
+  <link rel="canonical" href="http://zqhjj.top/2019/05/06/ROC与AUC/">
 
 
 
 
 
-  <title>LeetCode 11.Container With Most Water | It's not who you are underneath,it's what you do that defines you</title>
+  <title>ROC与AUC | It's not who you are underneath,it's what you do that defines you</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zqhjj.top/2018/12/24/LeetCode-11-Container-With-Most-Water/">
+    <link itemprop="mainEntityOfPage" href="http://zqhjj.top/2019/05/06/ROC与AUC/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jimmy">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">LeetCode 11.Container With Most Water</h1>
+          <h1 class="post-title" itemprop="name headline">ROC与AUC</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-12-24T20:07:47+08:00">
-                2018-12-24
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-06T16:30:46+08:00">
+                2019-05-06
               </time>
             
 
@@ -298,34 +298,12 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-03-07T00:30:11+08:00">
-                2019-03-07
+              <time title="Post modified" itemprop="dateModified" datetime="2019-05-07T16:53:39+08:00">
+                2019-05-07
               </time>
             
           </span>
 
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/leetcode/" itemprop="url" rel="index">
-                    <span itemprop="name">leetcode</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -353,7 +331,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  230
+                  693
                 </span>
               
 
@@ -369,7 +347,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  1
+                  2
                 </span>
               
             </div>
@@ -390,13 +368,30 @@
       
 
       
-        <blockquote>
-<p>Given n non-negative integers a1, a2, …, an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.</p>
-<p>Note: You may not slant the container and n is at least 2.</p>
-</blockquote>
-<p>经典的双指针，作为双指针的练习还是很不错的</p>
-<h3 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">maxArea</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; height)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> left = <span class="number">0</span>,right = height.size() - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(left &lt; right)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> min_height = min(height[left],height[right]);</span><br><span class="line">        res = max(res,min_height * (right - left));</span><br><span class="line">        <span class="keyword">while</span>(height[left] &lt;= min_height &amp;&amp; left &lt; right) ++left;</span><br><span class="line">        <span class="keyword">while</span>(height[right] &lt;= min_height &amp;&amp; left &lt; right) --right;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h3 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxArea</span><span class="params">(<span class="keyword">int</span>[] height)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">0</span>, right = height.length - <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (left &lt; right) &#123;</span><br><span class="line">            <span class="keyword">int</span> min_height = height[left] &lt; height[right] ? height[left] : height[right];</span><br><span class="line">            res = res &gt; min_height * (right - left) ? res : min_height * (right - left);</span><br><span class="line">            <span class="keyword">while</span> (height[left] &lt;= min_height &amp;&amp; left &lt; right) ++left;</span><br><span class="line">            <span class="keyword">while</span> (height[right] &lt;= min_height &amp;&amp; left &lt; right) --right;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <p># ROC与AUC</p>
+<p>很多学习器是为测试样例产生一个实值或者概率预测，然后将其与一个阈值比较，若大于阈值则分类为正例，反之被分类为反例。</p>
+<p>实际上，根据这个实值或者预测结果，可以将样例进行排序，最后可能是正例的排在最前面，最不可能是正例的排在最后面。分类过程就是在这个排序过程中设置一个“截断点”，截断点之前的将会被判定为正例，之后的将会被判定为反例。</p>
+<p>在不同的任务中，一般“截断点”的设置也不会相同。若系统更加重视查准率，则可以将截断点设置较为靠前；若系统更加重视查全率，则可以将截断点设置较为靠后。</p>
+<p>-—</p>
+<p>## ROC</p>
+<p>ROC全称是<strong>受试者工作特征曲线</strong>。与P-R曲线类似，在进行机器学习的过程中，每次根据学习器的预测结果对样例进行排序，同时按照顺序对每个样例依次作为正例进行预测。每次计算其<strong>真正例率</strong>以及<strong>假正例率</strong>，分别作为纵轴以及横轴。这就可以得到<strong>ROC</strong>曲线。</p>
+<p>其中，真正例率简称(TPR)，其定义为：</p>
+<script type="math/tex; mode=display">
+
+TP= \frac{TP}{TP+FN}</script><p>假正例率简称FPR，定义为：</p>
+<script type="math/tex; mode=display">
+
+FP=\frac{FP}{TN+FP}</script><p>ROC图绘制方式如下：</p>
+<p>给定$m^+$个正例和$m^-$个反例。根据机器学习预测结果对其进行排序。然后把分类阈值设置为最大，即所有样例均为反例。此时真正例率与假正例率均为0，在坐标(0,0)处标记一个点。然后依次将每个样例划分为正例，设前一个点的标记为$(x,y)$，若当前点为真正例，则对应点的坐标为$(x,y+\frac{1}{m^+})$，反之若当前点为假正例，则对应坐标为$(x+\frac{1}{m^-},y)$。</p>
+<p>在学习器性能对比时，若有一个学习器的ROC曲线被另一个完全包住，则可以断言后者的性能优于前者。若曲线存在交叉，则可以对比ROC曲线下的面积，即<strong>AUC</strong>。</p>
+<p>直接计算AUC较为复杂，一种AUC的近似估算方式为（近似看作梯形计算）：</p>
+<script type="math/tex; mode=display">
+
+AUC=\frac{1}{2}\sum_{i=1}^{m-1}(x_{i+1}-x_i)(y_i+y_{i+1})</script><p>AUC考虑的是样本预测的排序质量，与排序误差有着紧密的联系。给定$m^+$个正例和$m^-$个反例。令$D^+$与$D^-$分别表示正例、反例集合。</p>
+<p>则损失可以定义为：</p>
+<script type="math/tex; mode=display">
+
+\mathcal{l_{rank}}=\frac{1}{m^+m^-}\sum_{\mathbb{x^+}\in D^+}\sum_{\mathbb{x^-}\in D^-}(\mathbb{I}(f(\mathbb x^+)<f(\mathbb x^-))+\frac{1}{2}\mathbb{I}(f(\mathbb{x^+})=(f(\mathbb{x^-})))</script><p>对于每一个样例，若正例的预测值小于反例，则记录为一个罚分，否则记录为0.5个罚分。</p>
 
       
     </div>
@@ -417,7 +412,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="http://zqhjj.top/2018/12/24/LeetCode-11-Container-With-Most-Water/" title="LeetCode 11.Container With Most Water">http://zqhjj.top/2018/12/24/LeetCode-11-Container-With-Most-Water/</a>
+    <a href="http://zqhjj.top/2019/05/06/ROC与AUC/" title="ROC与AUC">http://zqhjj.top/2019/05/06/ROC与AUC/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -432,7 +427,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
+            <a href="/tags/机器学习/" rel="tag"># 机器学习</a>
           
         </div>
       
@@ -445,8 +440,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/18/LeetCode-3-Longest-Substring-Without-Repeating-Characters-1/" rel="next" title="LeetCode 3. Longest Substring Without Repeating Characters">
-                <i class="fa fa-chevron-left"></i> LeetCode 3. Longest Substring Without Repeating Characters
+              <a href="/2019/05/05/模型评估与选择——性能度量/" rel="next" title="模型评估与选择——性能度量">
+                <i class="fa fa-chevron-left"></i> 模型评估与选择——性能度量
               </a>
             
           </div>
@@ -455,8 +450,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/06/笔记20190306/" rel="prev" title="笔记20190306">
-                笔记20190306 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/05/07/代价敏感错误率与代价曲线/" rel="prev" title="代价敏感错误率与代价曲线">
+                代价敏感错误率与代价曲线 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -509,17 +504,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -581,22 +567,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#C"><span class="nav-number">1.</span> <span class="nav-text">C++</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java"><span class="nav-number">2.</span> <span class="nav-text">Java</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -840,6 +810,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
